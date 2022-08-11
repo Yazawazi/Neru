@@ -11,9 +11,7 @@ const { FrameManager } = require("./lib/frameManager.js")
 const print = arg => console.log(arg)
 let packets = []
 
-const packetManager = new PacketManager({
-    "errorHandle": true
-})
+const packetManager = new PacketManager()
 
 const frameManager = new FrameManager()
 
