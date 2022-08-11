@@ -1,0 +1,30 @@
+{
+  "name": "neru",
+  "version": "0.1.0",
+  "description": "now sleeping",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sorapointa/Neru.git"
+  },
+  "keywords": [
+    "zzz"
+  ],
+  "author": "Yazawazi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sorapointa/Neru/issues"
+  },
+  "homepage": "https://github.com/Sorapointa/Neru#readme",
+  "dependencies": {
+    "binary-parser": "^2.1.0",
+    "colors": "^1.4.0",
+    "pcap-parser": "^0.2.1"
+  }
+}

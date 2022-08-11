@@ -1,0 +1,7 @@
+{
+    "structPath": "D:/sora/foundation/shareDump.json",
+    "errorHandle": true,
+    "filters": [
+        "CRpcPutTheNameHere"
+    ]
+}
