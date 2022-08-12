@@ -42,7 +42,7 @@ parser.on("end", async () => {
 
     const allPackets = packetManager.parse(analyzedPackets)
 
-    for (const packet of allPackets) {
+    /* for (const packet of allPackets) {
         print(packet)
-    }
+    } */
 })
