@@ -27,7 +27,7 @@ node app.js [pcap]
 ### Person
 
 - [Asnxthaony](https://github.com/Asnxthaony) - Help in data serialization, deserialization
-- [lilmayofuksu](https://github.com/lilmayofuksu) - Help in inversion, computer security, and cryptography
+- [lilmayofuksu](https://github.com/lilmayofuksu) - Help in reverse engineering, computer security, and cryptography
 - [Melledy](https://github.com/Melledy) - Help in data serialization, deserialization and packet structure
 
 ### Project
