@@ -1,18 +1,27 @@
 const fs = require("fs")
 const pcapParser = require("pcap-parser")
 
-const stream = fs.createReadStream("E:/meledy.pcap")
+const { ipHeaderParser, tcpHeaderParser } = require("./lib/headerReader.js")
+const { PacketManager } = require("./lib/neru-lib.js")
+const { FrameManager } = require("./lib/frameManager.js")
+const { error } = require("./lib/log.js")
+const { structPath, errorHandle } = require("./config.json")
+
+const args = process.argv.slice(2)
+if (args[0] === null) {
+    error("No file specified!")
+    return
+}
+
+const stream = fs.createReadStream(args[0])
 const parser = pcapParser.parse(stream)
 
-const { ipHeaderParser, tcpHeaderParser } = require("./lib/headerReader.js")
-const { PacketManager } = require("./lib/neru/packetManager.js")
-const { FrameManager } = require("./lib/frameManager.js")
-
-const print = arg => console.log(arg)
 let packets = []
 
-const packetManager = new PacketManager()
-
+const packetManager = new PacketManager({
+    errorHandle: errorHandle,
+    structPath: structPath
+})
 const frameManager = new FrameManager()
 
 parser.on("packet", packet => {
@@ -42,7 +51,7 @@ parser.on("end", async () => {
 
     const allPackets = packetManager.parse(analyzedPackets)
 
-    /* for (const packet of allPackets) {
-        print(packet)
-    } */
+    for (const packet of allPackets) {
+        console.log(packet)
+    }
 })

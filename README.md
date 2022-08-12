@@ -4,6 +4,12 @@
 
 **WIP**: This project is under inactive development, you can take a part in contributing by.
 
+## Important
+
+It does not have support for a game company's custom type, and will automatically return data as-is when it encounters a field containing a custom type, which I will support in the future.
+
+And the code is messy 😭
+
 ## Name
 
 A product of sleep deprivation, from the Japanese 「寝る」.
@@ -13,7 +19,7 @@ A product of sleep deprivation, from the Japanese 「寝る」.
 ```bash
 npm install
 # Before start, you need to edit config.json
-node app.js [pcap] # No!
+node app.js [pcap]
 ```
 
 ## Thanks
