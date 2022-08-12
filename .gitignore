@@ -1,3 +1,5 @@
 node_modules
 doc.md
 .idea
+static
+shareDump.json
