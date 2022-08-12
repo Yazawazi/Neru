@@ -2,7 +2,7 @@
 
 > Now sleeping...
 
-**WIP**: This project is under inactive development, you can take a part in contributing by.
+**WIP**: This project is under inactive development, you can take a part in contributing.
 
 ## Important
 
